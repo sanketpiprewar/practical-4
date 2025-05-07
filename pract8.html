@@ -1,0 +1,78 @@
+<html>
+<head>
+    <title>Seminar Registration Form</title>
+    <link rel="stylesheet" href="p ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Seminar Registration</h2>
+    
+    <form>
+        <div class="input-group">
+            <label for="name"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="input-group">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="input-group">
+            <label for="phone"><i class="fa fa-phone"></i> Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" pattern="[0-9]{10}" required>
+        </div>
+
+        <div class="input-group">
+            <label for="institute"><i class="fa fa-building-columns"></i> Institute Name</label>
+            <input type="text" id="institute" name="institute" placeholder="Enter your institute name" required>
+        </div>
+
+        <div class="input-group">
+            <label for="year"><i class="fa fa-calendar-alt"></i> Year</label>
+            <select id="year" name="year" required>
+                <option value="">Select your year</option>
+                <option value="1">1st Year</option>
+                <option value="2">2nd Year</option>
+                <option value="3">3rd Year</option>
+                <option value="4">4th Year</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+          <label for="branch"><i class="fa fa-code-branch"></i> Branch</label>
+          <select id="branch" name="branch" required>
+              <option value="">-- Select Branch --</option>
+              <option>Select your Branch</option>
+              <option>AI-DS</option>
+              <option>AI-ML</option>
+              <option>CSE</option>
+              <option>ETC</option>
+              <option>EE</option>
+              <option>ME</option>
+          </select>
+      </div>
+
+        <div class="input-group">
+            <label for="gender"><i class="fa fa-venus-mars"></i> Gender</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="resume"><i class="fa fa-file-upload"></i> Upload Resume (PDF)</label>
+            <input type="file" id="resume" name="resume" accept=".pdf" required>
+        </div>
+
+        <button type="submit">Submit Registration</button>
+    </form>
+</div>
+
+</body>
+</html>
